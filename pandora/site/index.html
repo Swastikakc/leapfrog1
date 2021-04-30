@@ -3,6 +3,7 @@
 
 <head>
     <title>Pandora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -11,14 +12,14 @@
 <body>
     <div class="header_wrapper">
         <div class="header">
-            <div class="logo">
+            <div class="logo clearfix">
                 <div class="main_logo clearfix">
                     <a href="#"><img src="./images/logo.png" alt="Logo"></a>
                 </div>
                 <div class="sub_logo clearfix">
                     <p>fantastic product and great prices</p>
                 </div>
-                <div class="menu">
+                <div class="menu clearfix">
                     <img src="./images/cart.png" alt="">
                     <a href="#" class="cart">0 items ($0.00 in total)</a>
                     <a href="#" class="checkout">Checkout</a>
@@ -30,18 +31,29 @@
         <div class="divider">
             <img src="./images/spacer-1-980px.png" alt="space">
         </div>
-        <div class="login_header">
+        <div class="login_header clearfix">
             <form>
                 <label for="emailid">Login</label>
                 <input type="text" name="Email Address" id="emailid" placeholder="Email Address">
                 <input type="password" name="password" id="password" placeholder="Password">
                 <button class="clearfix">Login</button>
-                <button class="clearfix">Continue as Guest</button>
+                <button class="clearfix continue">Continue as Guest</button>
             </form>
+            <div class="dropdown hamburger clearfix">
+                <a href="#" class="dropbtn"><img src="./images/ico-menu-1.png" alt="hamburger"></a>
+                <div class="dropdown-content">
+                    <a href="#">Home </a>
+                    <a href="#">Women+</a>
+                    <a href="#">Men+</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
         </div>
         <div class="divider">
             <img src="./images/spacer-1-980px.png" alt="space">
         </div>
+        
         <div class="header">
             <div class="primary_menu clearfix">
                 <a href="#">Home </a>
@@ -69,7 +81,6 @@
                         <a href="#">Blazers & Jackets</a>
                     </div>
                 </div>
-
                 <a href="#">Blog</a>
                 <a href="#">Contact & Info</a>
                 <a href="#">Feature</a>
@@ -80,7 +91,7 @@
             </div>
         </div>
     </div>
-    <div class="Banner">
+    <div class="banner">
         <div class="banner_content">
             <h1>Lorem ipsum dolor sit amet consectetur </h1>
         </div>

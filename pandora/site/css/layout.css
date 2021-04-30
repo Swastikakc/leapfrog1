@@ -1,26 +1,101 @@
 .header_wrapper{
     width:100%;
 }
-
-.header{
-    margin-left: 12%;
-    margin-right: 12%;
-    margin-bottom:2% ;
-    padding-top: 1%;
+@media screen and (min-width: 0px){
+    .main_logo{
+        margin-right: 26px;
+    }
+     
+    .sub_logo
+    {
+        color: #CC003E;
+        margin-right: 25%;
+    }
+    .primary_menu a {
+        font-size: larger;
+    }
+    .search_bar{
+        visibility: hidden;
+    }
+    .primary_menu{
+        visibility: hidden;
+    }
+    .hamburger{
+        visibility: visible;
+        float: left;
+        
+    }
+    .continue {
+        visibility: hidden;
+    }
+    .login_header{
+        float: left;
+        margin-right: 0%;
+    }
+    .banner{
+       display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    .login_header {
+        visibility: visible;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .primary_menu{
+        visibility: visible;
+    }
+    .hamburger{
+        visibility: hidden;
+    }
+    .login_header{
+        float: none;
+    }
+    .banner{
+        display: block;
+}
+@media screen and (min-width: 992px){
+    
+    .continue {
+        visibility: visible;
+    }
+    
 }
 
-.main_logo{
-    margin-right: 26px;
-    float: left;
+@media screen and (min-width: 1200px){
+    .main_logo{
+        margin-right: 26px;
+        float: left;
+    }
+    .header{
+        margin-left: 12%;
+        margin-right: 12%;
+        margin-bottom:2% ;
+        padding-top: 1%;
+    }
+     
+    .sub_logo
+    {
+        color: #CC003E;
+        float:left;
+        margin-right: 25%;
+        font-size: smaller;
+    }
+    .login_header{
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    .primary_menu{
+        float: left;
+        margin-right: 15%;
+    }
+    .search_bar{
+        visibility: visible;
+    }
+   
 }
- 
-.sub_logo
-{
-    color: #CC003E;
-    float:left;
-    margin-right: 25%;
-    font-size: smaller;
-}
+
+
 .menu{
     float left;
 }
@@ -34,10 +109,7 @@
     margin-right: 10px;
     color: #CC003E;
 }
-.login_header{
-    margin-left: 25%;
-    margin-right: 25%;
-}
+
 form label{
     font-weight: bold;
     font-size: smaller;
@@ -71,13 +143,7 @@ button{
     margin-left: 12%;
     margin-right: 12%; 
 } 
-.primary_menu{
-    float: left;
-    margin-right: 15%;
-}
-.primary_menu a {
-    font-size: larger;
-}
+
 .search_bar img{
     float: left;
 }
